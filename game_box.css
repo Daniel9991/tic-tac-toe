@@ -1,0 +1,106 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #f1f3f4;
+}
+
+#game-box{
+	max-width: 90%;
+	width: fit-content;
+	margin: auto;
+}
+
+#game-box h1{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+#board{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10px;
+}
+
+.cell{
+	font-family: monospace;
+	font-size: 50px;
+	padding: 20px 22.5px;
+	border: 2px solid black;
+	outline: none;
+}
+
+.unpressed{
+	background-color: slategray;
+	color: slategray;
+}
+
+.unpressed:hover{
+	cursor: pointer;
+	border: 2px solid white;
+	box-shadow: 1px 1px 3px rgb(236, 234, 234), -1px -1px 3px rgb(236, 234, 234);
+}
+
+.pressed{
+	font-family: monospace;
+	font-size: 50px;
+	background-color: rgb(83, 96, 109);
+	color: white;
+}
+
+.blocked{
+	opacity: 0.1;
+}
+
+.blocked:hover{
+	cursor: default;
+	border: 2px solid black;
+	box-shadow: none;
+}
+
+.winner{
+	background-color: rgb(29, 105, 62);
+	color: white;
+}
+
+#restart-button{
+	display: block;
+	padding: 15px 30px;
+	font-size: 1.3rem;
+	background-color: coral;
+	color: white;
+	border: 1px solid #f1f3f4;
+	outline: none;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: fit-content;
+	margin: auto;
+	margin-top: 50px;
+	border-radius: 15px;
+	transition: background-color 0.6s;
+}
+
+#restart-button:hover{
+	background-color: rgb(238, 86, 30);
+	cursor: pointer;
+}
+
+#pop-up-message{
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	padding: 50px;
+	font-size: 2rem;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	color: white;
+	background-color: #333;
+	opacity: 0;
+	transition: opacity 0.6s;
+	display:none;
+}

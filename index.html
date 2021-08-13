@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="game_box.css">
+	<link rel="stylesheet" href="registration_form.css">
+	<title>Tic Tac Toe</title>
+</head>
+<body>
+	<div id="registration-form">
+		<div id="form-content">
+			<h1>Welcome to Tic Tac Toe</h1>
+			<div class="entry-group">
+				<label>Player 1 Name</label>
+				<input id="player1-input" type="text" placeholder="Name">
+				<div id="wrong-player1-input" class="wrong">Name can't be empty</div>
+			</div>
+			<div class="entry-group">
+				<label>Player 2 Name</label>
+				<input id="player2-input" type="text" placeholder="Name">
+				<div id="wrong-player2-input" class="wrong">Name can't be empty</div>
+			</div>
+			<input id="play-button" type="button" value="Play">
+		</div>
+	</div>
+	<div id="game-box">
+		<h1 id="current-player-heading">Welcome to Tic Tac Toe</h1>
+		<div id="board">
+			<button id="cell-0" class="unpressed cell">X</button>
+			<button id="cell-1" class="unpressed cell">O</button>
+			<button id="cell-2" class="unpressed cell">X</button>
+			<button id="cell-3" class="unpressed cell">O</button>
+			<button id="cell-4" class="unpressed cell">X</button>
+			<button id="cell-5" class="unpressed cell">O</button>
+			<button id="cell-6" class="unpressed cell">X</button>
+			<button id="cell-7" class="unpressed cell">O</button>
+			<button id="cell-8" class="unpressed cell">X</button>
+		</div>
+		<button id="restart-button">Restart</button>
+		<div id="pop-up-message"></div>
+	</div>
+	<script src="code.js"></script>
+</body>
+</html>
